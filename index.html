@@ -1,1 +1,52 @@
+<!-- @format -->
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="start text-center">
+      <!--Widget starts here--->
+      <script src="http://confirmme.com:1390/verify/js/verifyme.js"></script>
+      <button class="btn btn-primary" type="button" onclick="verifyNow(); ">
+        <span>Start Verification</span>
+      </button>
+      <script>
+        function verifyNow() {
+          var serviceid = { value: "999999" };
+          var logourl = {
+            value:
+              "http://confirmme.com:1390/partners/b1e2637628011596325313.png",
+          };
+          var bordercolorhex = { value: "DDFFC6" };
+          var btncolorhex = { value: "CB9EFF" };
+          var bgcolorhex = { value: "B8FF8F" };
+          var callbackurl = { value: "https://chamsplc.com/confirmme-widget/" };
+          var idtypeboo = { value: "1" };
+          var addresstypeboo = { value: "0" };
+          var handler = verifyPop(
+            serviceid,
+            logourl,
+            bordercolorhex,
+            btncolorhex,
+            bgcolorhex,
+            callbackurl,
+            idtypeboo,
+            addresstypeboo
+          );
+        }
+      </script>
+      <!--Widget ends here--->
+    </div>
+  </body>
+</html>
